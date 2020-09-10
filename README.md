@@ -44,6 +44,28 @@ root.mainloop()
 
 This will import the main class Tk(). This using the ctypes, will change `DPIAwareness` to fix the resolution to the highest resolution available on your machine...
 
+##### AssistiveTouch
+
+There are many examples. The most obvious one is the one on `Iphone`.
+
+```python
+
+import ModTkinter
+from ModTkinter import AssistiveTouch, ModTk
+
+root = Tk()
+At = AssistiveTouch(master= root, text = "AT" )
+root.mainloop()
+
+
+
+```
+`master` declaration is for the sake of the base app
+with this one line of code you can access it.
+
+In order to set the command, access through `At.camn['command']`
+`camn` is the button part so you can do all the `tk.Button` configurations to it...
+
 
 ###### Button new Functions
 
@@ -89,7 +111,6 @@ button.leavebind = Your_Def_Leave
 ```
 
 Others functionalities are as a normal button's.
-
 
 
 
