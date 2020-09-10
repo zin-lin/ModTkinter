@@ -9,6 +9,8 @@ Images are not use as normal images but pixels so that you can set any color you
 #### Requirements
 
      Windows OS
+     1920*1080 (for better performances)
+     Windows Xp or 10 (for better performances)
 
 
 #### Installation
@@ -34,7 +36,7 @@ from ModTkinter import ModTk
 root = ModTk()
 """
 ModTk instead of Tk will fix resolution 
-The best resolution in your Windows system will be obtain
+The best resolution in your Windows system will be obtained
 
 """
 root.mainloop()
@@ -69,7 +71,7 @@ There you can pass any color. Opacity will range from `0-255`
 button.init([0, 106, 255, 255], 40, 20, [10 , 10, 10, 230], animation= True)
 ```
 
-`40` is the width of the outline of the button or else is will be overflowed like in `C#`.
+`40` is the width of the outline of the button or else is will be overflowed by the text like in `C#` and `Web`.
 `20` here is the height.
 `[10 , 10, 10, 230]` is the active color.
 
@@ -80,11 +82,13 @@ configuration will be perform with `button.init()` again.
 Since `<Enter>` and `<Leave>` bindings are used for animations, you can-
 
 ```python
-button.enterbind = Your_Def
+button.enterbind = Your_Def_Enter
+button.leavebind = Your_Def_Leave
 #You dun even have to pass in event
+#these will also be performed when leave and enter the button 
 ```
 
-
+Others functionalities are as a normal button's.
 
 
 
