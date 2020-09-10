@@ -19,10 +19,10 @@ Images are not use as normal images but pixels so that you can set any color you
 
 ##### Usage
 *Importing
-   
-    import ModTkinter
-    from ModTkinter import *
-
+```python
+import ModTkinter
+from ModTkinter import *
+```
 This will import All widgets and Functions from the packages
 
 *MainClass
