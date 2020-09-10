@@ -12,10 +12,10 @@ Images are not use as normal images but pixels so that you can set any color you
 
 
 ##### Installation
-    ```javascript
+    
 
     pip install ModTkinter
-    ```
+    
 
 ##### Usage
 *Importing
