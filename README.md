@@ -18,26 +18,27 @@ Images are not use as normal images but pixels so that you can set any color you
     
 
 ##### Usage
-*Importing
+######Importing
 ```python
 import ModTkinter
 from ModTkinter import *
 ```
 This will import All widgets and Functions from the packages
 
-*MainClass
+######MainClass
+```python
+import ModTkinter
+from ModTkinter import ModTk
 
-    import ModTkinter
-    from ModTkinter import ModTk
     
-    
-    root = ModTk()
-    """
-    ModTk instead of Tk will fix resolution 
-    The best resolution in your Windows system will be obtain
-    
-    """
-    root.mainloop()
+root = ModTk()
+"""
+ModTk instead of Tk will fix resolution 
+The best resolution in your Windows system will be obtain
+
+"""
+root.mainloop()
+```
 
 This will import the main class Tk()
 
