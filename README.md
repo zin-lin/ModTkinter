@@ -75,6 +75,15 @@ button.init([0, 106, 255, 255], 40, 20, [10 , 10, 10, 230], animation= True)
 
 setting `animation = True` is to allow some bindings like entering will change the color to active color, leaving will maintain the original color...
 
+configuration will be perform with `button.init()` again.
+
+Since `<Enter>` and `<Leave>` bindings are used for animations, you can-
+
+```python
+button.enterbind = Your_Def
+#You dun even have to pass in event
+```
+
 
 
 
