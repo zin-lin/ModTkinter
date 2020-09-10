@@ -24,7 +24,7 @@ def per():
 f= ModTk()
 
 
-f.iconbitmap("d:/MYMATE.ver.1.0/mymatelogo.ico")
+
 f.title("Iphone-Type Calculator")
 
 f.configure(bg="black")
