@@ -40,7 +40,7 @@ The best resolution in your Windows system will be obtain
 root.mainloop()
 ```
 
-This will import the main class Tk(). This using the ctypes, will change `<DPIAwareness>` to fix the resolution to the highest resolution available on your machine...
+This will import the main class Tk(). This using the ctypes, will change `DPIAwareness` to fix the resolution to the highest resolution available on your machine...
 
 
 ###### Button new Functions
@@ -64,7 +64,16 @@ This will render the image layer automatically over the Tk button, then adjust t
 ```python
 button.init([0, 106, 255, opacity])
 ```
-There you can pass any color. Opacity will range from 0-255
+There you can pass any color. Opacity will range from `0-255`
+```python
+button.init([0, 106, 255, 255], 40, 20, [10 , 10, 10, 230], animation= True)
+```
+
+`40` is the width of the outline of the button or else is will be overflowed like in `C#`.
+`20` here is the height.
+`[10 , 10, 10, 230]` is the active color.
+
+setting `animation = True` is to allow some bindings like entering will change the color to active color, leaving will maintain the original color...
 
 
 
